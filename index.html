@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - KaJack Piper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a80e2df8e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+       <div class="container">
+           <nav>
+               <img src="images/logo.png" class="logo">
+               <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
+               </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+           </nav>
+
+           <div class="header-text">
+               <p>Full Stack Developer</p>
+               <h1>Hi, I'm <span>Jackson </span><br>Kairani From Kenya</h1>
+           </div>
+       </div>
+   </div> 
+
+   <div id="about">
+     <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="images/user.jpg">
+             </div>
+             <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p>I'm a Full Stack Developer proficient in front end development 
+                 and back end web development, coding with HTML, CSS and JavaScript
+                 for the client-side and maintaining databases and infrastructure server-side.</p>
+
+                 <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                         <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                         <li><span>Web Development</span><br>Web App Development</li>
+                         <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                         <li><span>BlockChain Development</span><br>Designing Smart Contracts</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                     <ul>
+                         <li><span>2021 - Current</span><br> Blockchain Development at KaJack 
+                         Piper<br> UI/UX Design at KaJack Piper<br> Full Stack Website Developer at 
+                         KaJack Piper</li>
+                         <li><span>2019 - 2021</span><br>Google Analytics And Database Analysis at 
+                         Civil Engineering Solutions Company Limited</li>
+                         <li><span>2016 - 2017</span><br>Internship at Sketchman Limited</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                     <ul>
+                         <li><span>2016</span><br>UI/UX Design Training at FreeCodeAcademy</li>
+                         <li><span>2018</span><br>Programming from Solo Learn</li>
+                         <li><span>2019</span><br>Computer Science from Havard University</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>  
+   </div>
+   <!-- -----------------services-------------------- -->
+   <div id="services">
+       <div class="container">
+           <h1 class="sub-title">My Services</h1>
+           <div class="services-list">
+               <div>
+                <i class="fas fa-code"></i>
+                   <h2>Web Design</h2>
+                   <p>As a part of KaJack Piper, I design websites that are displayed on the 
+                    internet. Being the best at making sites like this one look good, I create
+                   visual elements and am an expert in UI or user interface, which means I 
+                   strategically design sites that are intutive and easy for visitors to navigate.</p>
+                    <a href="#">Learn More</a>
+               </div>
+               <div>
+                <i class="fas fa-crop"></i>
+                   <h2>UI/UX Design</h2>
+                   <p>Here at KaJack Piper, I create user-friendly interfaces that enable users to 
+                   understand how to use complex technical products that is because, if you're passionate 
+                   about the latest trends and devices, you'll find great fulfillment in beint involved in the 
+                   design process for the next hot gadget.</p>
+                    <a href="#">Learn More</a>
+               </div>
+               <div>
+                <i class="fab fa-app-store"></i>
+                   <h2>App Design</h2>
+                   <p>KaJack Piper being a Computer Company, I create programs for smartphones, tablets and computers
+                   that work in a range of industries and across a number of platforms, including Apple iOS and macOS, 
+                   Google Android and Windows. I also create games, weather apps, social networking tools, maps and 
+                   navigation programs.</p>
+                    <a href="#">Learn More</a>
+               </div>
+               <div>
+                   <i class="fab fa-ethereum"></i>
+                   <h2>Smart Contracts</h2>
+                   <p>Being proficient in both Solidity and Etherium, at KaJack Piper, I examine if any inputs are 
+                   impacting the execution feasibility and identifying the limitation(s) of the underlying blockchain  
+                   platform. I also define the data elements and set conditions of execution per the business logic.</p>
+                    <a href="#">Learn More</a>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- -------------------------------portfolio---------------------------- -->
+   <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" width="350px" height="450px">
+                    <div class="layer">
+                        <h3>KaJack Piper Website</h3>
+                        <p>Official Website for hiring website developers 
+                        who are always standby to serve you.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" width="350px" height="450px">
+                    <div class="layer">
+                        <h3>Civil Engineering Website</h3>
+                        <p>Official Ecommerce Website for Civil Engineering Solutions
+                        Company Limited so that clients can get easy access to products.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" width="350px" height="450px">
+                    <div class="layer">
+                        <h3>Andrew Kibe Show Website</h3>
+                        <p>Official Podcast Website for the Andrew Kibe Show  
+                        with tools like audio pieces that client can efficiently 
+                        listen to the show's podcast.</p>
+                        <a href="#"><i class="fa fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+       </div>
+   </div>
+   <!- -----------------------contact---------------- -->
+   <div id="contact">
+       <div class="container">
+           <div class="row">
+               <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="fas fa-paper-plane"></i>kajackpiper@gmail.com</p>
+                   <p><i class="fas fa-phone-square-alt"></i>+254713286220</p>
+                   <div class="social-icons">
+                       <a href=""><i class="fab fa-facebook"></i></a>
+                       <a href=""><i class="fab fa-twitter-square"></i></a>
+                       <a href=""><i class="fab fa-instagram"></i></a>
+                       <a href=""><i class="fab fa-linkedin"></i></a>
+                   </div>
+                   <a href="images/Jack Resume.pdf" download class="btn btn2">Download CV</a>
+               </div>
+              
+               <div class="contact-right">
+                   <form>
+                       <input type="text" name="Name" placeholder="Your Name" required>
+                       <input type="email" name="email" placeholder="Your Email" required>
+                       <textarea name="Message" rows="6"></textarea>
+                       <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+       <div class="copyright">
+           <p>Copyright &copy; KaJack Piper - All Rights Reserved.</p>
+       </div>
+   </div>
+   <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+           for(tablink of tablinks) {
+               tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents) {
+               tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+       }
+
+   </script>
+
+   <script>
+       var sidemenu = document.getElementById("sidemenu");
+       
+       function openmenu(){
+           sidemenu.style.right = "0";
+       }
+       function closemenu(){
+           sidemenu.style.right = "-200px";
+       }
+   </script>
+
+</body>
+</html>
