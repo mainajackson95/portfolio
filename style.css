@@ -412,6 +412,13 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
+    .services-list > div {
+        margin-bottom: 25px;
+    }
+    .services-list {
+        display: block;
+        flex-basis: 100%;
+    }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
